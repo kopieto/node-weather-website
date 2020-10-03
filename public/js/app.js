@@ -1,6 +1,3 @@
-console.log('Client side Javascript file is loaded!')
-
-
 const weatherForm = document.querySelector('form')  //will search for the first form in the html
 const search = document.querySelector('input')      //will search for the first input in the html
 const message1 = document.querySelector('#message-1') //after we set uniq id for the p, we target it with #
