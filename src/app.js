@@ -22,7 +22,7 @@ app.use(express.static(publicDirPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'weather forecast',
+        title: 'Weather forecast',
         name: 'Tsetso'
     }) 
 })
@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title:'This is our help page',
+        title:'Help page',
         name: 'Tsetso'
     })
 })
@@ -66,7 +66,7 @@ app.get('/weather', (req, res) => {
         })
     })
 })
-
+// require a query for products page
 app.get('/products', (req,res) => {
     if (!req.query.search) {
          return res.send({
